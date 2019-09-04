@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scripture</title>
+    <script>
+        function showscripture() {
+            let name = document.getElementById("username").value;
+            let printscript = "I " + name + "am doing html.";
+            document.getElementById("displayscript").innerHTML = printscript;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Please enter your name</p>
+    <input type="text" id="username">
+    <button type="button" onclick="showscripture()">Show My Verse</button>
+    <div id="displayscript"></div>
+</body>
+
+</html>
