@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>convert quarts to liters </title>
+</head>
+
+    <script>
+        /*input -- given quarts 
+        *processing ---- quarts multiply by 0.946
+        *output --- liters
+        */
+ function quatolitres(){
+// getting quarts from the user 
+let ttext=document.getElementById("quartsinputbox").value;
+// converting user typed text into number 
+let quart = parseFloat(ttext);
+//converting from quarts to liters
+let liters = 0.946*quart;
+// Display liters to the user 
+document.getElementById("litresDiv").innerHTML= liters;
+
+    }
+</script>
+<body>
+   enter your measurment by quarts:
+<input type = "text" id = "quartsinputbox";>
+<button type="button" onclick ="quatolitres()">convert</button> 
+<div id = "litresDiv"></div>
+</body>
+</html>

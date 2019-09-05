@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>milage per gallon  </title>
+</head>
+
+    <script>
+        /* input ----- begining odeometer , ending odeometer , gasoline by galon 
+      *processing ----  getting milage per gallon by calculating the begining and ending odeometer didving by galon
+      * output ------- getting the final milage 
+      */
+ function mileagespergalon(){
+// getting the begining odeometer of a car from the user 
+let begining =document.getElementById("t1").value;
+// getting the ending of odeometer of the car from the user 
+let ending =document.getElementById("t2").value;
+// getting the gallon of gasoline of the car from the user
+let galon =document.getElementById("gal").value;
+// converting milage user typed text in to numebr 
+let milage =parseFloat((begining - ending )/galon);
+// display the milage for the user
+document.getElementById("mileageDiv").innerHTML= milage;
+    }
+</script>
+<body>
+   <label> first odeometer  </label>
+<input type = "text" id = "t1";>
+<br>
+<br>
+<label>second odeometer</label>
+<input type = "text" id = "t2";>
+<br>
+<br>
+<label>gasoline by gallon </label>
+<input type = "text" id = "gal">
+<button type="button" onclick ="mileagespergalon()">convert</button> 
+<div id = "mileageDiv"></div>
+</body>
+</html>

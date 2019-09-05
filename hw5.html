@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>heartrate range</title>
+</head>
+
+    <script>
+ function heartrate(){
+let age =document.getElementById("t1").value;
+let max= parseFloat (220 - (age/0.85));
+let min= parseFloat (220 - (age/0.65));
+document.getElementById("heartDiv").innerHTML= min +"   "+ max;
+
+    }
+</script>
+<body>
+   <label>age </label>
+<input type = "text" id = "t1">
+<br>
+<br>
+<button type="button" onclick ="heartrate()">convert</button> 
+<div id = "heartDiv"></div>
+</body>
+</html>

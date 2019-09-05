@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> convert kilometer to miles </title>
+    <script>
+        function num_stack() {
+            let total = document.getElementById("t1").value;
+            let each = document.getElementById("t2").value;
+            let total_stack = Math.ceil(total/each);
+      
+            document.getElementById("milesDiv").innerHTML = total_stack;
+        }
+    </script>
+</head>
+
+<body>
+    <label>total box</label>
+    <input type="text" id="t1">
+    <br>
+    <br>
+    <label>box in each stack</label>
+    <input type="text" id="t2">
+    <br>
+
+    <button type="button" onclick="num_stack()">convert</button>
+    <br>
+    <br>
+    <div id="milesDiv"> </div>
+</body>
+
+</html>

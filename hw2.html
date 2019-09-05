@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> convert kilometer to miles </title>
+    <script>
+        /* input ---- distance in kilometers 
+        *processing --- convert from kilometer to mile
+        *output  ---- distance converted to mile
+        */
+        function kilotomiles() {
+            //getting kilometer from the user 
+            let kilo = document.getElementById("kilometerinputbox").value;
+            // changing kilometer text in to numebr 
+            let kml = parseFloat(kilo);
+            // getting out put of miles 
+            let miles = kml * 0.62;
+            // Display distance in miles to the user 
+            document.getElementById("milesDiv").innerHTML = miles;
+        }
+    </script>
+</head>
+
+<body>
+    enter your measurement by kilometer:
+    <input type="text" id="kilometerinputbox">
+    <button type="button" onclick="kilotomiles()">convert</button>
+    <br>
+    <br>
+    <div id="milesDiv"> </div>
+</body>
+
+</html>

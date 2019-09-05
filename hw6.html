@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>employee netpay </title>
+</head>
+<script>
+     /*  input --- employee hours , hourly wages 
+     * processing ---- calculating the gross pay and net pay
+     * output --- net pay
+     */
+function emppay(){
+    // getting employee hours from the user 
+let emphrs = document.getElementById("emph").value;
+// getting employee hourly wage 
+let wage = document .getElementById("wag").value;
+// calculating gross pay 
+let grosspay = parseFloat(emphrs *wage);
+// converting netpay user typed text into number
+let netpay=parseFloat(grosspay-grosspay*0.15);
+//Display the net pay to the user 
+document.getElementById("npayDiv").innerHTML=netpay;
+
+}
+ 
+</script>
+
+<body>
+<label > employee hours </label>
+<input type = "text"  id = "emph"> 
+<br>
+<br>
+<label>employee wage <label>
+<input type= "text"  id= "wag" > 
+<button type="button" onclick ="emppay()">convert</button> 
+<div id = "npayDiv"></div>    
+</body>
+</html>
